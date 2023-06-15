@@ -10,3 +10,8 @@ The 1$ gesture recognizer can detect 5 different letters as gestures: The letter
 
 To play the "Draw after me"-Game you can start the application and press space. A unistroke will be displayed for 3 Seconds. After that you can start drawing with left-mouse. The game will continue when you draw correctly and the gesture is correctly detected, otherwise a game-over screen will show.
 
+##  References:
+
+White Background Image from: <a href="https://www.freepik.com/free-photo/abstract-surface-textures-white-concrete-stone-wall_4326138.htm#query=white%20background&position=0&from_view=keyword&track=ais">Image by lifeforstock</a> on Freepik </br>
+Most of the code for the recognizer is taken and rewritten from https://depts.washington.edu/acelab/proj/dollar/index.html
+
