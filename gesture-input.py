@@ -51,6 +51,14 @@ class GestureRecognizer:
 
     def drawBackgroundAndLabels(self):
         background.blit(0, 0)
+        pyglet.text.Label("You can draw the letters S, D, W, N and C",
+                          font_name='Times New Roman',
+                          font_size=20,
+                          x=250,
+                          y=150,
+                          color=(0, 0, 0, 255),
+                          anchor_x='center',
+                          anchor_y='center').draw()
         pyglet.text.Label(self.feedback,
                           font_name='Times New Roman',
                           font_size=30,
@@ -83,6 +91,7 @@ class GestureRecognizer:
         if len(self.points) > 0 and self.isDrawing:
             self.feedback = "detecting"
             self.feedback, self.time = self.recognizer.recognize(self.points)
+            self.feedback = "Prediction: " + self.feedback
             self.points = []
 
     # Function that was used to create the unistroke-templates
